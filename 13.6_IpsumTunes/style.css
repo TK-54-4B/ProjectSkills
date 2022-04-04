@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-color: #b90415;
+    --primary-color-hover: #d3071b;
+    --secondary-color: #103063;
+    --secondary-color-hover: #143f85;
+    --light-color: #f4f4f4;
+}
+
+body{
+    font-family: "PT Sans", sans-serif;
+    background: #222;
+    margin: 0;
+    color: #fff;
+    line-height: 1.6;
+}
+
+img{
+    width: 70%;
+}
+
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+/* NavBar */
+nav{
+    height: 40px;
+    width: 100%;
+    background: #111;
+    color: #eee;
+    position: fixed;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #eee;
+    text-decoration: none;
+}
+
+nav li:hover{
+    height: 40px;
+    background-color: #444;
+}
+
+nav a#openup {
+    display: none;
+}
+
+/* showcase */
+#showcase01{
+    margin: 0;
+    padding: 0;
+    background: url("https://picsum.photos/id/495/1280/720") no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#showcase01 .container{
+    margin-top: 30vh;
+}
+
+#showcase01 h1{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+#showcase01 h2{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.container{
+    max-width: 1280px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.section{
+    padding: 2rem 0;
+    font-size: 2rem;
+    color: #ccc;
+}
+
+.section h3{
+    font-size: 2rem;
+}
+
+.section-head{
+    font-size: 2.5rem;
+}
+
+.lead{
+    font-size: 1.1rem;
+}
+
+#showcase04{
+    background: url("https://picsum.photos/id/681/1280/360") center center/cover;
+}
+
+/* Footer */
+.footer-columns{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 2rem;
+    text-align: left;
+    font-size: 14px;
+}
+
+.footer-columns ul{
+    list-style: none;
+}
+
+.footer-columns ul li:first-child{
+    font-size: 1.2rem;
+    border-bottom: #444 solid 1px;
+    margin-bottom: 0.7rem;
+    color: #ccc;
+}
+
+.footer-bottom{
+    background: #151515;
+    color: #ccc;
+    padding: 0.5rem 0;
+}
+
+/* Buttton */
+.btn{
+    padding: 1rem;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.btn-primary{
+    background: var(--primary-color);
+    margin-top: 1rem;
+}
+
+.btn-primary:hover{
+    background: var(--primary-color-hover);
+}
+
+.btn-secondary{
+    background: var(--secondary-color);
+}
+
+.btn-secondary:hover{
+    background: var(--secondary-color-hover);
+}
+
+/* Others */
+.bg-light{
+    background: #ccc;
+    color: #222;
+}
+
+.text-center{
+    text-align: center;
+}
+
+@media screen and (max-width: 540px){
+    .hide{
+        display: none;
+    }
+    nav{
+        height: auto;
+        border-bottom: 0;
+    }
+
+    nav ul{
+        display: none;
+        height: auto;
+    }
+
+    nav li{
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+
+    nav a{
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: #333;
+        border-bottom: 1px solid #555;
+    }
+
+    nav a:hover{
+        background: #444;
+    }
+
+    nav a#openup:after{
+        content: "|||";
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Safari and Chrome */
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+    }
+
+    nav a#openup {
+        display: block;
+        background-color: #333;
+        width: 100%;
+        position: relative;
+    }
+}
+
+
+.cf:before, .cf:after{
+    content: "";
+    display: table;
+}
+  
+  .cf:after{
+    clear: both;
+}
+  
+  .cf{
+    zoom: 1;
+}
+  
+@media screen and (max-width: 768px){
+    .footer-columns{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        padding: 0;
+    }
+}
