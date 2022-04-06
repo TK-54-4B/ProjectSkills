@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --orange: rgb(255, 127, 80);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 1.1rem; 
+    font-weight: 400;
+    color: #222;
+}
+
+h6{
+    color: #ddd;
+}
+
+#products > div.container.text-center.mt-5.py-5 > hr{
+    background-color: var(--orange);
+    height: 1px;
+    margin: 0 auto;
+}
+
+.navbar{
+    font-size: 16px;
+}
+
+.navbar-light .navbar-nav a.nav-link{
+    color: #222;
+    padding: 0 10px;
+    transition: 0.3s easy;
+}
+
+.navbar-light .navbar-nav a.nav-link:hover,
+.navbar i:hover,    
+.navbar-light .navbar-nav a.nav-link.active,
+.navbar i.active,
+.navbar-light.active{
+    color: rgb(255, 127, 80);
+}
+
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+a.nav-link{
+    padding: 1rem 1rem;
+}
+
+#bar{
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;    
+    transition: 0.2s ease;
+    color: #333;
+}
+
+#bar:hover,
+#bar.active{
+    color: #ddd;
+}
+
+/* .navbar-brand{
+    margin-left: 2.5%;
+} */
+
+#showcase{
+    background: url("https://source.unsplash.com/YoF79VE9Sec/1920x1080");
+    /* background-position: 100px 0 */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+.showcase-content{
+    margin-left: 5%;
+    margin-top: -10%;
+}
+#showcase span{
+    color: var(--orange);
+}
+
+.btn{
+    cursor: pointer !important;
+    font-weight: 700 !important;
+    padding: 1rem 2rem!important;
+    border: 2px solid #222!important;
+    background: #222 !important;
+    color: #fff!important;
+    text-transform: uppercase !important;
+    text-transform: uppercase !important;
+    transition: 0.2s ease !important;
+}
+
+.btn:hover{
+    background: #444 !important;
+}
+
+button{
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    background: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-transform: uppercase !important;
+    transition: 0.2s ease;
+}
+
+button:hover{
+    background: #444;
+}
+
+/* .showcase-branding-content img{
+    margin: 1rem 1rem;
+} */
+
+/* Offer */
+#offer .tab-1 img,
+#offer .tab-2 img,
+#offer .tab-3 img{
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#offer .tab-1 div,
+#offer .tab-2 div,
+#offer .tab-3 div{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#offer .tab-1:hover div,
+#offer .tab-2:hover div,
+#offer .tab-3:hover div{
+    cursor: pointer;
+    background: rgba(255, 127, 80, 0.5)
+}
+
+#offer .tab-1 div button,
+#offer .tab-2 div button,
+#offer .tab-3 div button{
+    border: none;
+    border-radius: 10px;
+}
+
+/* Products */
+.products{
+    cursor: pointer;
+}
+
+.product img{
+    width: 100%;
+    transition: 1s ease;
+}
+
+.product:hover img{
+    transform: scale(1.1);    
+}
+
+.zoom{
+    width: 100%;
+    overflow: hidden;
+}
+
+.product .buy-btn{
+    background: var(--orange);
+    border:none;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.product:hover .buy-btn{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.4s all;
+}
+
+.product .buy-btn:hover{
+    background: var(--orange);
+    color: #111;
+}
+
+.star i{
+    color: var(--orange);
+    margin-bottom: 1rem;
+}
+
+/* Banner */
+#banner{
+    color: #fff;
+    background: url("https://source.unsplash.com/anUOLC3zMD4/1920x1080") no-repeat left center/cover;
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;  
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#banner .banner-content{
+    margin-left: 70px;
+}
+
+#footer{
+    width: 100%;
+    height: 20vh;
+    background: #222;
+}
+
+#offer > div > div.tab-1.col-lg-4.col-md-12.col-12.p-0 > div > h2,
+#offer > div > div.tab-2.col-lg-4.col-md-12.col-12.p-0 > div > h2,
+#offer > div > div.tab-3.col-lg-4.col-md-12.col-12.p-0 > div > h2{
+    color: #222;
+}
+@media (max-width: 960px){
+    body > nav > div > button:hover,
+    body > nav > div > button.focus{
+        background: var(--orange);
+        border: none;
+        outline: none;
+    }
+
+    #navbarSupportedContent > ul > li > a{
+        padding-bottom: 0.4rem;
+        padding-top: 0.4rem;
+        font-size: 1.2rem;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+    }
+
+
+}
+
+
+
+
