@@ -46,14 +46,15 @@ h6{
     color: #ddd;
 }
 
-#products > div.container.text-center.mt-5.py-5 > hr{
+#products > div.container > hr{
     background-color: var(--orange);
     height: 1px;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .navbar{
     font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .navbar-light .navbar-nav a.nav-link{
@@ -84,7 +85,7 @@ a.nav-link{
     padding: 0.5rem;
     cursor: pointer;    
     transition: 0.2s ease;
-    color: #333;
+    color: #222;
 }
 
 #bar:hover,
@@ -227,7 +228,7 @@ button:hover{
 
 .product .buy-btn:hover{
     background: var(--orange);
-    color: #111;
+    color: #222;
 }
 
 .star i{
@@ -240,22 +241,11 @@ button:hover{
     color: #fff;
     background: url("https://source.unsplash.com/anUOLC3zMD4/1920x1080") no-repeat left center/cover;
     width: 100%;
-    height: 50vh;
+    height: 75vh;
     background-attachment: fixed;  
-    
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
-
-#banner .banner-content{
-    margin-left: 70px;
-}
-
-#footer{
-    width: 100%;
-    height: 20vh;
-    background: #222;
 }
 
 #offer > div > div.tab-1.col-lg-4.col-md-12.col-12.p-0 > div > h2,
@@ -263,6 +253,54 @@ button:hover{
 #offer > div > div.tab-3.col-lg-4.col-md-12.col-12.p-0 > div > h2{
     color: #222;
 }
+
+#banner button{
+    background: var(--orange);
+}
+
+#banner button:hover{
+    background: var(--orange);
+    color: #222;
+}
+
+/* Footer */
+#footer{
+    width: 100%;
+    background: #222;
+    font-size: 0.9rem;
+    color: #ddd;
+
+}
+
+#footer > div > div > h6{
+    margin-bottom: 0rem!important;
+    font-weight: 600;
+}
+
+#footer p,
+#footer li{
+    color: #888;
+}
+
+#footer > div > div:nth-child(1) > img{
+    background: #ddd;
+    border-radius: 40px;
+    margin-bottom: 1rem;
+}
+
+#footer > div.row.container > div.footer-1 > div.social-media > a{
+    color: #ddd;
+}
+
+#footer > div.row.container > div.footer-1 > div.social-media > a:hover{
+    color: var(--orange);
+}
+
+#footer > div.row.container > div.footer-1 > div.social-media > a > i{
+    margin-right: 10px;
+}
+
+/* RWD */
 @media (max-width: 960px){
     body > nav > div > button:hover,
     body > nav > div > button.focus{
@@ -282,6 +320,88 @@ button:hover{
 
 }
 
+/* -------------------------------------------------------------------------------------- */
+
+/* Shop.html */
+.product img{
+    /* fill div with img */
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+#page-number > nav > ul > li.page-item.active > a{
+    background: var(--orange);
+    color: #222;
+}
+
+#page-number > nav > ul > li.page-item > a.page-link{
+    color: #222;
+}
+
+#page-number > nav > ul > li.page-item:hover a{
+    background: #222;
+    color: #ddd;
+}
+
+#page-number > nav > ul > li.page-item > a{
+    text-decoration: underline;
+}
+
+#page-number > nav > ul > li:nth-child(1) > a,
+#page-number > nav > ul > li:nth-child(5) > a{
+    text-decoration: none;
+}
+
+#page-number > nav > ul > li > a{
+    border: none;
+}
+/* .pagination>li:first-child>a, .pagination>li:first-child>span,
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+
+}  
+.pagination>li>a, .pagination>li>span {
+
+} */
 
 
+
+
+/* -------------------------------------------------------------------------------------- */
+
+/* Selected Prodyct.html */
+#products > div.row.mx-auto.container > div:nth-child(1) > a{
+    text-decoration: none;
+    color: #222;
+}
+#products > div.row.mx-auto.container > a{
+    overflow: hidden;
+}
+
+.img-preview-group{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.img-preview-col{
+    cursor: pointer;
+}
+
+.product-content .buy-btn{
+    background: var(--orange);
+}
+
+.selected-product .select{
+    display: block;
+    padding: 5px 10px;
+}
+
+.selected-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
 
