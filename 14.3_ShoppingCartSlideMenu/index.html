@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/0463a5856d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" width="device-width" content="width=device-width, initial-scale=1.0">
     <title>TK Szop</title>
 </head>
 <body>
     <header>
         <div class="nav container">
             <a href="#" class="logo">Internetowy Szop w internecie</a>
-            <i id="cart-icon" class="fas fa-shopping-cart"></i>
+
+            <i 
+                id="cart-icon" 
+                class="fas fa-shopping-cart"
+                data-cart-icon=""
+            ></i>
         </div>
     </header>
 
     <!-- SlideCart -->
-    <div class="cart-menu">
+    <div class="cart-menu" data-cart-menu="">
         <div class="cart-menu-img-div">
-            <img class="cart-menu-img" src="./easter-bunny-256.png" alt="">
+            <img class="cart-menu-img" src="./img/easter-bunny-256.png" alt="">
         </div>
 
         <h2 class="cart-title"><i class="fa-solid fa-egg"></i>  Koszyk  <i class="fa-solid fa-egg"></i></h2>
 
-        <div class="cart-container">
-            <!-- <div class="cart-content">
+        <div class="cart-container" data-cart-container="">
+            <!-- <div class="cart-content" data-cart-content="">
                 <img src="https://source.unsplash.com/200x200/?tshirt" alt="" class="cart-img">
 
                 <div class="cart-details">
-                    <div class="cart-item-title">Koszulka</div>
-                    <div class="cart-item-price">9.99 zł</div>
-                    <input class="cart-item-quantity" type="number" value="1">
+                    <div class="cart-item-title" data-cart-item-title="">Koszulka</div>
+                    <div class="cart-item-price" data-cart-item-price="">9.99 zł</div>
+                    <input class="cart-item-quantity data-cart-item-quantity="" type="number" value="1">
 
                 </div>
-                <i class="fas fa-trash btn-delete"></i>
+                <i class="fas fa-trash btn-delete" data-btn-delete=""></i>
             </div> -->
         </div>
 
         <div class="priceSum">
             <div class="priceSum-title">Suma: </div>
-            <div class="priceSum-price">0.00  zł</div>
+            <div class="priceSum-price" data-priceSum-price="">0.00  zł</div>
         </div>
 
-        <button class="btn-buy-cart" type="button">Kup teraz</button>
+        <button class="btn-buy-cart" data-btn-buy-cart="" type="button">Kup teraz</button>
 
-        <i class="fas fa-close btn-cart-close"></i>
+        <i class="fas fa-close btn-cart-close" data-btn-cart-close=""></i>
     </div>
 
     <!-- ShopContainer -->
@@ -55,87 +57,90 @@
 
             <div class="shop-content">
                 <div class="product-content">
-                    <img class="product-img" src="https://source.unsplash.com/250x350/?tshirt" alt="">
+                    <img class="product-img" data-product-img="" src="./img/koszulka.jpeg" alt="">
                     
-                    <h2 class="product-title">Koszulka</h2>
+                    <h2 class="product-title" data-product-title="">Koszulka</h2>
                     
-                    <span class="price">99.99 zł</span>
+                    <span class="price" data-price="">99.99 zł</span>
 
-                    <i class="fas fa-shopping-cart btn-addToCart"></i>
+                    <i class="fas fa-shopping-cart btn-addToCart" data-btn-addToCart=""></i>
                 </div>
                         
                 <div class="product-content">
-                    <img class="product-img" src="https://source.unsplash.com/250x350/?boots" alt="">
+                    <img class="product-img" data-product-img="" src="./img/buty.jpeg" alt="">
                     
-                    <h2 class="product-title">Buty</h2>
+                    <h2 class="product-title" data-product-title="">Buty</h2>
                     
-                    <span class="price">79.99 zł</span>
+                    <span class="price" data-price="">79.99 zł</span>
 
-                    <i class="fas fa-shopping-cart btn-addToCart"></i>
+                    <i class="fas fa-shopping-cart btn-addToCart" data-btn-addToCart=""></i>
                 </div>
                         
                 <div class="product-content">
-                    <img class="product-img" src="https://source.unsplash.com/250x350/?trousers" alt="">
+                    <img class="product-img" data-product-img="" src="./img/koszulka_spodnie.jpeg" alt="">
                     
-                    <h2 class="product-title">Spodnie</h2>
+                    <h2 class="product-title" data-product-title="">Spodnie</h2>
                     
-                    <span class="price">109.99 zł</span>
+                    <span class="price" data-price="">109.99 zł</span>
 
-                    <i class="fas fa-shopping-cart btn-addToCart"></i>
+                    <i class="fas fa-shopping-cart btn-addToCart" data-btn-addToCart=""></i>
                 </div>
                         
                 <div class="product-content">
-                    <img class="product-img" src="https://source.unsplash.com/250x350/?watch" alt="">
+                    <img class="product-img" data-product-img="" src="./img/zegarek.jpeg" alt="">
                     
-                    <h2 class="product-title">Zegarek</h2>
+                    <h2 class="product-title" data-product-title="">Zegarek</h2>
                     
-                    <span class="price">49.99 zł</span>
+                    <span class="price" data-price="">49.99 zł</span>
 
-                    <i class="fas fa-shopping-cart btn-addToCart"></i>
+                    <i class="fas fa-shopping-cart btn-addToCart" data-btn-addToCart=""></i>
                 </div>
                         
                 <div class="product-content">
-                    <img class="product-img" src="https://source.unsplash.com/250x350/?blouse" alt="">
+                    <img class="product-img" data-product-img="" src="./img/bluza.jpeg" alt="">
                     
-                    <h2 class="product-title">Bluza</h2>
+                    <h2 class="product-title" data-product-title="">Bluza</h2>
                     
-                    <span class="price">99.99 zł</span>
+                    <span class="price" data-price="">99.99 zł</span>
 
-                    <i class="fas fa-shopping-cart btn-addToCart"></i>
+                    <i class="fas fa-shopping-cart btn-addToCart" data-btn-addToCart=""></i>
                 </div>
                         
                 <div class="product-content">
-                    <img class="product-img" src="https://source.unsplash.com/250x350/?shirt,men" alt="">
+                    <img class="product-img" data-product-img="" src="./img/koszula.jpeg" alt="">
                     
-                    <h2 class="product-title">Koszula</h2>
+                    <h2 class="product-title" data-product-title="">Koszula</h2>
                     
-                    <span class="price">89.99 zł</span>
+                    <span class="price" data-price="">89.99 zł</span>
 
-                    <i class="fas fa-shopping-cart btn-addToCart"></i>
+                    <i class="fas fa-shopping-cart btn-addToCart" data-btn-addToCart=""></i>
                 </div>
                         
                 <div class="product-content">
-                    <img class="product-img" src="https://source.unsplash.com/250x350/?jacket" alt="">
+                    <img class="product-img" data-product-img="" src="./img/kurtka.jpeg" alt="">
                     
-                    <h2 class="product-title">Kurta</h2>
+                    <h2 class="product-title" data-product-title="">Kurta</h2>
                     
-                    <span class="price">99.99 zł</span>
+                    <span class="price" data-price="">99.99 zł</span>
 
-                    <i class="fas fa-shopping-cart btn-addToCart"></i>
+                    <i class="fas fa-shopping-cart btn-addToCart" data-btn-addToCart=""></i>
                 </div>
                         
                 <div class="product-content">
-                    <img class="product-img" src="https://source.unsplash.com/250x350/?sunglasses" alt="">
+                    <img class="product-img" data-product-img="" src="./img/okulary.jpeg" alt="">
                     
-                    <h2 class="product-title">Okulary</h2>
+                    <h2 class="product-title" data-product-title="">Okulary</h2>
                     
-                    <span class="price">79.99 zł</span>
+                    <span class="price" data-price="">79.99 zł</span>
 
-                    <i class="fas fa-shopping-cart btn-addToCart"></i>
+                    <i class="fas fa-shopping-cart btn-addToCart" data-btn-addToCart=""></i>
                 </div>
             </div>
     </section>
 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/0463a5856d.js" crossorigin="anonymous"></script>
 </body>
 </html>
