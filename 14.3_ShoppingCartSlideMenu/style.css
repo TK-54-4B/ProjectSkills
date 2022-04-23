@@ -9,12 +9,13 @@
     text-decoration: none;
 }
 
-img{
-    width: 100%;
-}
-
 a{
     color: #333;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 body{
@@ -82,12 +83,7 @@ header{
     cursor: pointer;
     padding: 10px;
     border: 1px solid #333;
-    transition: 0.3s;
-}
-
-.product-img{
-    width: 250px;
-    height: 350px;
+    transition: 0.4s;
 }
 
 .product-title{
