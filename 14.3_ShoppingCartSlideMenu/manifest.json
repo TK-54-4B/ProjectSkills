@@ -1,7 +1,7 @@
 {
     "name": "TK Szop",
     "short_name": "TK Shop",
-    "start_url": "/index.html",
+    "start_url": "/ProjectSkills/14.3_ShoppingCartSlideMenu/index.html",
     "display": "standalone",  
     "background_color": "#DDDDDD",
     "theme_color": "#AAAAAA",
