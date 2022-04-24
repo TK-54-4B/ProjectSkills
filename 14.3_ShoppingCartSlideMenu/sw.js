@@ -2,6 +2,12 @@ self.addEventListener('install', event => {
     console.log('service worker installed')
 })
 
-this.addEventListener('fetch', function (event) {
-
-});
+// activate event
+self.addEventListener('activate', event => {
+    console.log('service worker activated');
+  });
+  
+// fetch event
+self.addEventListener('fetch', event => {
+    //console.log('fetch event', event);
+  });
